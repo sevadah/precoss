@@ -21,7 +21,7 @@ Furthermore, each folder also contains its own `Readme.md` file with further des
 
 The simulations were run on the PC desktop running Windows 7 (Intel Core i7-4790, 3.6 GHz, 16 GB RAM). Scripts should also work on Linux operating system (e.g. Ubuntu 18.04 or derivatives).
 
-Typically on the system described above simulation for one sentences takes from around 15 minutes up to 40 minutes (rarely could be more; depends on the duration of a sentence and number of syllables). 
+Typically on the system described above simulation for one sentence takes from around 15 minutes up to 40 minutes (rarely could be more; depends on the duration of a sentence and number of syllables). 
 
 ## External toolboxes and materials
 
