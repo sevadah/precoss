@@ -13,21 +13,21 @@ function dx = spm_F1( x, v, pE )
     % number of syllable
     Ns = length(pE);
 
-    % gamma / timing units
-    tu = v(1:8,1);
-
-    w = v(10:9+Ns,1); % when there is an envelope unit
+    % gamma units - causal states of the level above
+    gu = v(1:8,1);
+    % syllable units - causal states of the level above
+    w = v(9:8+Ns,1); 
     
-
+    % weight spectrotemporal representation of each unit (pE{i}) with its corresponding activation level
     pp = 0;
     for i = 1 : 1 : Ns
         pp = pp + w(i)*pE{i};
     end
     
-
+    % Hopfield network
     kappa1 = 2;
     x1 = x;
-    dx1 = kappa1.*(-D*x1 + W*tanh(x1) + pp*tu);
+    dx1 = kappa1.*(-D*x1 + W*tanh(x1) + pp*gu);
 
     dx = dx1;
 

@@ -16,8 +16,8 @@ ilevel = ilevel + 1;
 x1 = zeros(N1,1);
 
 M(ilevel).x = x1; % frequency channels
-M(ilevel).f = 'spm_F1';
-M(ilevel).g = 'spm_G1';
+M(ilevel).f = 'spm_F1_theta';
+M(ilevel).g = 'spm_G1_theta';
 
 M(ilevel).V = Vh1;
 M(ilevel).W = Wh1;
@@ -41,7 +41,7 @@ x2(21 : 20 + Nsyl,1) = -1; % syllable unit
 
 M(ilevel).x = x2;
 M(ilevel).f = 'spm_F2_v3';
-M(ilevel).g = 'spm_G2';
+M(ilevel).g = 'spm_G2_theta';
 
 M(ilevel).V = Vh2;
 M(ilevel).W = Wh2;

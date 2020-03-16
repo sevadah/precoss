@@ -32,12 +32,7 @@ x2(9 : 16,1)= [0.9669 0.0179 0.0012 0.0007 0.0007 0.0006 0.0002 0.0117]';
 
 x2(17,1) = 1; % gamma_speed
 
-x2(18,1) = -1; % theta
-x2(19,1) = 0; % theta
-
-x2(20,1) = 0; % input
-
-x2(21 : 20 + Nsyl,1) = -1; % syllable unit
+x2(18 : 17 + Nsyl,1) = -1; % syllable unit
 
 M(ilevel).x = x2;
 M(ilevel).f = 'spm_F2_v2';

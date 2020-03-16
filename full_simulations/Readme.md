@@ -4,15 +4,19 @@
 
 The folder contains the scripts to run model simulations for all model variants presented in the manuscript.
 
+> note: all the scripts tagged in the name with theta correspond to model varaints with theta module
+> otherwise, scripts correspond to models without theta module, or work in the same way for both cases
+> below example is given for notheta variants, but the same applies for theta models as well
+
 ## Initiate the generative model
 
-Scripts names `generative_model_inf_v{1}.m`, where {i = 1 : 7} (for each model variant presented in the table below) are used to initiate the generative model. In there functions called `spm_F1`, `spm_F2_v{i}` and `spm_G1`, `spm_G2` correspond to the hidden and causal states for each model level. 
+Scripts names `generative_model_inf_v{i}.m`, where {i = 1 : 7} (for each model variant presented in the table below) are used to initiate the generative model. In there functions called `spm_F1`, `spm_F2_v{i}` and `spm_G1`, `spm_G2` correspond to the hidden and causal states for each model level. 
 
 ## Run Simulations
 
-The master script (the one that starts simulations for all models) is called `model_inf_all_par.m`. It uses parallel computing toolbox in Matlab (`parfor` is used). If you like to run a simulation for a single sentence, you may run the  `model_inf_single.m` script, where you also set which model (`iModel`) you are running on which sentence (`iSentence`). 
+The master script (the one that starts simulations for all models) is called `model_inf_all_par.m`. It uses parallel computing toolbox in Matlab (`parfor` is used). For small dataset (as for `Demo`) one can use regular `for`.
 
-`iModel` corresponds to the model variants (from 1 to 7, see the table below).
+`iModel` corresponds to the model variants (from 1 to 6, see the table below).
 
 `iSentence` corresponds to sentence variants (from 1 : 220, the total number of sentences).
 

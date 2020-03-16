@@ -1,5 +1,9 @@
 %% statistical analysis for Figures 3 and 5
 
+% at this stage perf_eval results are combined into a single matrix
+% 'perf_internal.mat' where first 6 columns correspond to models A-F
+% and the last column corresponds to the model with explicit resets
+
 % get performance
 perf_all = importdata('perf_internal.mat'); 
 
@@ -29,7 +33,7 @@ alpha_orig = 1e-7;
 h_f3 = p_pairs < alpha_orig/length(p_pairs);
 
 
-%% analysis for Figure 5 - theta vs explicit onset
+%% analysis for Figure 6 - theta vs explicit onset
 % remove columns for the other model variants and keep only for A and A`
 % 1st column corresponds to A
 % 2nd column corresponds to A'

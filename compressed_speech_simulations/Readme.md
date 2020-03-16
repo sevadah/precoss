@@ -9,6 +9,8 @@ Only 2 model variants were tested with compressed speech:
 
 Furthermore: each model variant was tested with the speech signal compressed by a factor of x2 and x3. 
 
-as for the main simulations, the script `model_inf_all_par.m` starts the inference for each model and sentences specified in the variables `iModel`, `iSentence`, `full_sentence_list`.
+as for the main simulations, the script `model_inf_all_par_theta.m` starts the inference for each model and sentences specified in the variables `iModel`, `iSentence`, `full_sentence_list`.
+
+> for variants without theta module the script is names 'notheta'
 
 One additional script `compress_signal.m` was added for this case that compresses the signal with the given compression factor.

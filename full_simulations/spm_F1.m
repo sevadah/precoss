@@ -16,7 +16,7 @@ function dx = spm_F1( x, v, pE )
     % gamma units - causal states of the level above
     gu = v(1:8,1);
     % syllable units - causal states of the level above
-    w = v(10:9+Ns,1); 
+    w = v(9:8+Ns,1); 
     
     % weight spectrotemporal representation of each unit (pE{i}) with its corresponding activation level
     pp = 0;
