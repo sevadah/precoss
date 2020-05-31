@@ -1,7 +1,7 @@
 # Description and content
 
 ## Description
-MATLAB code custom scripts for the manuscript as "Combining predictive coding with neural oscillations for online syllable recognition in natural speech" (ID: NCOMMS-19-01489-T).
+MATLAB code custom scripts for the manuscript as "Combining predictive coding and neural oscillations enables online syllable recognition in natural speech".
 
 Sevada Hovsepyan (sevada.hovsepyan@unige.ch)
 
