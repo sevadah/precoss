@@ -3,7 +3,7 @@
 ## Description
 MATLAB code custom scripts for the manuscript as "Combining predictive coding and neural oscillations enables online syllable recognition in natural speech".
 
-Sevada Hovsepyan (sevada.hovsepyan@unige.ch)
+Sevada Hovsepyan (sevada.hovsepyan@gmail.com)
 
 ## Content
 
